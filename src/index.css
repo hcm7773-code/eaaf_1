@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', 'Noto Sans TC', sans-serif;
+    --font-sans: 'Noto Sans TC', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #081221;
+    color: #F1F5F9;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom sleek deep-blue scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #081221;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B3554;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22D3EE;
+}
+
+/* Subtle range input styling for forecast sliders */
+input[type="range"].tech-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #152B47;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type="range"].tech-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #22D3EE;
+  border: 2px solid #081221;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.4);
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type="range"].tech-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}

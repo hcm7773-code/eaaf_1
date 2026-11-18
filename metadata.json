@@ -1,0 +1,6 @@
+{
+  "name": "EAAF 教育新創產業分析與趨勢預測平台",
+  "description": "基於 EAAF 教育 AI 生態系研究之資料視覺化儀表板與產業趨勢預測系統，涵蓋台灣與國際教育科技樣本、四大分析構面、七項關鍵指標、八大情報圖表與 Multi-Agent 趨勢預測。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
